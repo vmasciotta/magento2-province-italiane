@@ -14,7 +14,7 @@ Questo modulo installa le province italiane in Magento2
  },
  ...
  "repositories":[
-     {"type": "vcs", "url":"git@github.com:vmasciotta/magento2-province-italianegit"}
+     {"type": "vcs", "url":"git@github.com:vmasciotta/magento2-province-italiane.git"}
  ]
 ```
  
