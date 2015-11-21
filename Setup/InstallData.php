@@ -1,5 +1,4 @@
 <?php
-
 namespace Vmasciotta\ProvinceItaliane\Setup;
 
 use Magento\Directory\Helper\Data;
@@ -13,14 +12,14 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 class InstallData implements InstallDataInterface
 {
     /**
-     * Directory data.
+     * Directory data
      *
      * @var Data
      */
     private $directoryData;
 
     /**
-     * Init.
+     * Init
      *
      * @param Data $directoryData
      */
@@ -30,10 +29,11 @@ class InstallData implements InstallDataInterface
     }
 
     /**
-     * Installs data for a module.
+     * Installs data for a module
      *
      * @param ModuleDataSetupInterface $setup
-     * @param ModuleContextInterface   $context
+     * @param ModuleContextInterface $context
+     * @return void
      */
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
@@ -150,21 +150,13 @@ class InstallData implements InstallDataInterface
             'VT' => 'Viterbo',
         ];
 
-        /*foreach ($data as $row) {
-            $bind = ['country_id' => $row[0], 'code' => $row[1], 'default_name' => $row[2]];
-            $setup->getConnection()->insert($setup->getTable('directory_country_region'), $bind);
-            $regionId = $setup->getConnection()->lastInsertId($setup->getTable('directory_country_region'));
-
-            $bind = ['locale' => 'en_US', 'region_id' => $regionId, 'name' => $row[2]];
-            $setup->getConnection()->insert($setup->getTable('directory_country_region_name'), $bind);
-        }*/
-
         foreach ($province as $code => $name) {
-            $bind = ['country_id' => 'IT', 'code' => $code, 'default_name' => $name];
+            $bind = ['country_id'   => 'IT', 'code' => $code, 'default_name' => $name];
             $setup->getConnection()->insert($setup->getTable('directory_country_region'), $bind);
             $regionId = $setup->getConnection()->lastInsertId($setup->getTable('directory_country_region'));
 
-            $bind = ['locale' => 'it_IT', 'region_id' => $regionId, 'name' => $name];
+
+            $bind = ['locale'=> 'it_IT', 'region_id' => $regionId, 'name'=> $name];
             $setup->getConnection()->insert($setup->getTable('directory_country_region_name'), $bind);
         }
 

@@ -1,6 +1,13 @@
 {
   "name": "vmasciotta/magento2-province-italiane",
   "description": "Modulo per l'installazione delle province italiane in Magento2",
+  "authors": [
+    {
+      "name": "Valerio Masciotta",
+      "email": "sviluppo@valeriomasciotta.it",
+      "homepage": "http://www.valeriomasciotta.it"
+    }
+  ],
   "require": {
     "php": "~5.5.0|~5.6.0|~7.0.0",
     "magento/module-directory": "100.0.*"
