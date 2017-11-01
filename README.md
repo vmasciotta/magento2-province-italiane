@@ -10,7 +10,7 @@ Questo modulo installa le province italiane in Magento2
 composer require vmasciotta/magento2-province-italiane
 ```
  
- esegure quindi all'interno della root di magento i seguenti comandi:
+ eseguire quindi all'interno della root di magento i seguenti comandi:
 
 ```
 $ ./bin/magento cache:disable
