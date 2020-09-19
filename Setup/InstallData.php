@@ -125,12 +125,12 @@ class InstallData implements InstallDataInterface
             'RM' => 'Roma',
             'RO' => 'Rovigo',
             'SA' => 'Salerno',
-            'VS' => 'Medio Campidano',
             'SS' => 'Sassari',
             'SV' => 'Savona',
             'SI' => 'Siena',
             'SR' => 'Siracusa',
             'SO' => 'Sondrio',
+            'SU' => 'Sud Sardegna'
             'TA' => 'Taranto',
             'TE' => 'Teramo',
             'TR' => 'Terni',
