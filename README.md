@@ -1,9 +1,9 @@
-#Magento2 Province Italiane
+# Magento2 Province Italiane
 
 Questo modulo installa le province italiane in Magento2
 
 
-##Installazione tramite composer:
+## Installazione tramite composer:
  aggiungere la riga seguente al composer del proprio progetto:
  
 ```
